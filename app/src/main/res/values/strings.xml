@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HotelPro</string>
+
+    <string name="tab_nearby">Nearby</string>
+    <string name="tab_popular">Popular</string>
+    <string name="tab_all">All</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_note">Note</string>
+    <string name="menu_bookmark">Bookmark</string>
+</resources>

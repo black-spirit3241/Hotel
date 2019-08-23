@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:backgroundTint="@android:color/white">-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:backgroundTint="#FFFFFF">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgLocation"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:src="@drawable/ic_location"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toRightOf="@id/imgLocation"-->
+                    <!--android:text="Location \nDkaha"-->
+                    <!--android:textColor="@color/primary_text"/>-->
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:src="@drawable/profile"-->
+                    <!--app:civ_border_color="@color/colorAccent"-->
+                    <!--app:civ_border_width="1dp"-->
+                    <!--android:layout_alignParentRight="true"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<android.support.design.widget.TabLayout-->
+                <!--android:id="@+id/tabLayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--app:tabTextColor="@color/colorPrimaryDark"-->
+                <!--app:tabGravity="fill"-->
+                <!--app:tabMode="fixed"-->
+                <!--app:tabIconTint="@color/bottom_navigation_state"-->
+                <!--app:tabSelectedTextColor="@color/colorAccent">-->
+            <!--</android.support.design.widget.TabLayout>-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">-->
+
+    <!--</android.support.v4.view.ViewPager>-->
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_navigation_menu"
+        app:labelVisibilityMode="unlabeled"
+        app:itemTextColor="@color/bottom_navigation_state"
+        app:itemIconTint="@color/bottom_navigation_state"
+        app:layout_behavior="android.support.design.behavior.HideBottomViewOnScrollBehavior"/>
+</android.support.design.widget.CoordinatorLayout>
